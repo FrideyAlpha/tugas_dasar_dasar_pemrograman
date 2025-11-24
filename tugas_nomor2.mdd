@@ -1,0 +1,16 @@
+```mermaid
+flowchart TD
+    mulai([START])
+    id1[[Deklarasi variabel a: integer]]
+    output1[/"Program Menentukan Bilangan Ganjil Genap"/]
+    input1[/"Input nilai {a}"/]
+    proses1["{a} mod 2 = 0"]
+    mod{"{a} = 0 ?"}
+    genap[/"{a} adalah bilangan genap"/]
+    ganjil[/"{a} adalah bilangan ganjil"/]
+    akhir([END])
+
+    mulai --> id1 --> output1 --> input1 --> proses1 --> mod
+    mod -->|YA| genap --> akhir
+    mod -->|TIDAK| ganjil --> akhir
+```
